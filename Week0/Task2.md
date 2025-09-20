@@ -39,13 +39,31 @@ python3 -m venv -h
 ## 🛠️ Tool Installations & Verification
 
 ### 1. Yosys
+**Installation commands used:**
+```bash
+git clone https://github.com/YosysHQ/yosys.git
+cd yosys
+sudo apt install make
+sudo apt-get install build-essential clang bison flex \
+libreadline-dev gawk tcl-dev libffi-dev git \
+graphviz xdot pkg-config python3 libboost-system-dev \
+libboost-python-dev libboost-filesystem-dev zlib1g-dev
+make
+sudo make install
+```
+![Yosys Installation](screenshots/yosys_license.png)
 **Command to check version:**
 ```bash
 yosys --version
 ```
-![Yosys Installation](screenshots/yosys_installation.png)
+![Yosys Verification](screenshots/yosys_installation.png)
 
 ### 2. Icarus Verilog
+**Installation commands used:**
+```bash
+sudo apt-get update
+sudo apt-get install iverilog
+```
 **Command to check version:**
 ```bash
 iverilog -V
@@ -53,6 +71,11 @@ iverilog -V
 ![Icarus Installation](screenshots/iverilog_installation.png)
 
 ### 3. GTKWave
+**Installation commands used:**
+```bash
+sudo apt-get update
+sudo apt-get install gtkwave
+```
 **Command to check version:**
 ```bash
 gtkwave --version
